@@ -1,0 +1,305 @@
+@import 'responsive'
+
+.product
+	&__subtitle
+		font-size: 36px
+		line-height: 1
+		color: #000000
+		text-transform: uppercase
+		padding-bottom: 55px
+		font-weight: 200
+
+	&__inner
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -20px
+		+media(sm)
+			margin: 0px
+
+	&__elem
+		width: calc(100% / 3 - 40px)
+		margin: 0 20px
+		margin-bottom: 44px
+		padding: 18px 20px
+		padding-bottom: 25px
+		border: 2px solid #dfdfdf
+		transition: 0.3s box-shadow, 0.3s border
+		+media(mdx)
+			width: calc(100% / 2 - 40px)
+		+media(sm)
+			width: 100%
+			max-width: 500px
+			margin: 0 auto
+			margin-bottom: 40px
+		&:hover
+			box-shadow: 0 0 30px rgba(0, 0, 0, 0.2)
+			border-color: transparent
+
+	&__image
+		position: relative
+		background-repeat: no-repeat
+		background-size: cover
+		padding-top: 57%
+		min-height: 130px
+		margin-bottom: 30px
+
+	&__title
+		font-size: 16px
+		color: #000000
+		text-align: center
+		padding-bottom: 12px
+		font-weight: 400
+
+	&__text
+		padding-bottom: 16px
+		p
+			font-size: 16px
+			line-height: 1.9
+			color: #808080
+			text-align: center
+			font-weight: 400
+
+	&__price
+		font-size: 30px
+		line-height: 1
+		color: #000000
+		text-align: center
+		font-weight: 200
+
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -20px
+		margin-top: 42px
+		+media(md)
+			margin: 0px
+			margin-top: 35px
+
+	&__item
+		width: calc(100% / 2 - 40px)
+		margin: 0 20px
+		+media(md)
+			width: 100%
+			margin: 0px
+		&--data
+			+media(md)
+				margin-bottom: 40px
+
+	&__single
+		cursor: pointer
+		position: relative
+		padding-top: 56.25%
+		margin-bottom: 38px
+		&:after
+			opacity: 0
+			position: absolute
+			content: ' '
+			top: 0px
+			left: 0px
+			width: 100%
+			height: 100%
+			background-image: url(../img/icons/search-popup.svg)
+			background-repeat: no-repeat
+			background-position: center
+			background-color: rgba(0, 0, 0, 0.7)
+			background-size: 40px 40px
+			transition: 0.3s opacity, 0.3s visibility, 0.3s background-color
+		&:hover:after
+			opacity: 1
+			visibility: visible
+		img
+			position: absolute
+			top: 0
+			left: 0
+			display: block
+			width: 100%
+			height: 100%
+			object-fit: contain
+
+	&__gallery
+		margin: 0 -15px
+
+		.slick-slide
+			margin: 0 15px
+
+		.slick-prev,
+		.slick-next
+			position: absolute
+			top: calc(50% - 10px)
+			width: 20px
+			height: 20px
+			overflow: hidden
+			background-color: transparent
+			border: 0
+			padding: 0px
+			outline: none
+			cursor: pointer
+			&:after
+				content: ' '
+				position: absolute
+				z-index: 2
+				top: calc(50% - 7px)
+				left: 12px
+				width: 14px
+				height: 14px
+				border-top: 2px solid #fff
+				border-left: 2px solid #fff
+				transform: rotate(-45deg)
+				transition: 0.3s border
+
+			&:before
+				display: none
+
+		.slick-prev 
+			left: 10px
+
+		.slick-next 
+			right: 10px
+			transform: scaleX(-1)
+
+	&__col
+		outline: none
+		max-width: 25%
+		img
+			object-fit: cover
+			width: 100%
+			max-width: 100%
+			height: 100%
+			min-height: 70px
+			max-height: 70px
+			+media(md)
+				min-height: 90px
+				max-height: 90px
+		&--active
+			position: relative
+			&:after
+				position: absolute
+				z-index: 1
+				content: ' '
+				top: 0px
+				left: 0px
+				width: 100%
+				height: 100%
+				background-color: rgba(0, 0, 0, 0.6)
+				transition: 0.3s background-color
+				
+
+	&__desc
+		p
+			font-size: 16px
+			line-height: 1.9
+			color: #000000
+			padding-bottom: 2em
+
+	&__head
+		font-size: 24px
+		line-height: 1
+		color: #000000
+		text-transform: uppercase
+		border-bottom: 1px solid #ebebeb
+		padding-bottom: 25px
+		font-weight: 400
+
+	&__container
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		padding-bottom: 22px
+
+	&__count
+		max-width: 230px
+		width: 100%
+		font-size: 36px
+		line-height: 1
+		color: #333333
+		font-weight: 400
+		margin-right: 45px
+		margin-bottom: 18px
+		span
+			font-size: 18px
+			text-transform: uppercase
+		b
+			font-weight: 400
+
+	&__box
+		display: flex
+		align-items: center
+		margin-right: 30px
+		margin-bottom: 18px
+		font-family: OpenSans-Regular
+		input
+			font: inherit;
+			display: block
+			background-color: #ebebeb
+			max-width: 70px
+			width: 100%
+			font-size: 36px
+			color: #333333
+			border: none
+			border-radius: 5px
+			outline: none
+			text-align: center
+			padding: 13px 5px
+			padding-bottom: 14px
+			margin-right: 8px
+		
+
+	&__btn 
+		cursor: pointer
+		background-color: #ebebeb
+		position: relative
+		display: block
+		width: 32px
+		height: 32px
+		border: none
+		border-radius: 5px
+		outline: none
+		&--increment
+			margin-bottom: 6px
+			&:before 
+				content: ''
+				position: absolute
+				top: calc(50% - 8px)
+				left: calc(50% - 2px)
+				width: 4px
+				height: 16px
+				background-color: #333333
+
+		&:after 
+			content: ''
+			position: absolute
+			top: calc(50% - 2px)
+			left: calc(50% - 8px)
+			width: 16px
+			height: 4px
+			background-color: #333333
+
+	&__add
+		cursor: pointer
+		max-width: 265px
+		width: 100%
+		font: inherit
+		font-size: 16px
+		color: #000000
+		background-color: #f7bc28
+		border: none
+		outline: none
+		padding: 25px 5px
+		padding-bottom: 26px	
+		text-transform: uppercase
+		margin-bottom: 18px
+
+	&__row
+		display: flex
+		border-bottom: 1px solid #ebebeb
+		padding-top: 14px
+		padding-bottom: 12px
+		.product__content:first-child
+			width: 42%
+		.product__content:last-child
+			width: 59%
+
+	&__content
+		font-size: 16px
+		color: #000000
+		padding-right: 10px

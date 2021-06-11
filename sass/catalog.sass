@@ -1,0 +1,225 @@
+@import 'responsive'
+
+.catalog
+	margin-bottom: 80px
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		margin-top: 48px
+		&+.navigation
+			border-top: 1px solid #dfdfdf
+			border-bottom: 1px solid #dfdfdf
+			.nav-links
+				padding: 27px 0
+
+	&__item
+		&--filter 
+			width: 270px
+			align-self: end
+			background-color: #efefef
+			border-top: 2px solid #f7bc28
+			padding-top: 32px
+			padding-bottom: 18px
+			+media(sm)
+				width: 100%
+				margin-bottom: 40px
+		&--content
+			width: calc(100% - 270px)
+			padding-left: 40px
+			+media(sm)
+				width: 100%
+				padding-left: 0px
+
+	&__title
+		font-size: 24px
+		line-height: 1.25	
+		color: #000000
+		text-transform: uppercase
+		padding: 0 28px
+		padding-bottom: 24px
+		font-weight: 400	
+
+	&__box
+		border-top: 1px solid #cccccc
+		padding: 0 28px
+
+	&__block
+		cursor: pointer
+		user-select: none
+		position: relative
+		font-size: 16px
+		color: #000000
+		text-transform: uppercase
+		padding: 24px 0
+		font-weight: 400
+		&:after
+			content: ''
+			position: absolute
+			top: calc(50% - 10px)
+			right: 0px
+			width: 10px
+			height: 10px
+			border-top: 1px solid #000000
+			border-right: 1px solid #000000
+			transform: rotate(135deg)
+			transition: 0.3s transform, 0.3s top
+		&--active
+			&:after
+				top: calc(50% - 3px)
+				transform: rotate(-45deg)
+
+	&__row
+		display: flex
+		margin-bottom: 18px
+		input
+			display: none
+			&:checked + label:before
+				opacity: 1
+		label
+			user-select: none
+			position: relative
+			padding-left: 39px
+			&:after,
+			&:before
+				content: ''
+				position: absolute
+			&:after
+				top: calc(50% - 10px)
+				left: 0
+				width: 20px
+				height: 20px
+				background-color: #cccccc
+
+			&:before
+				z-index: 2
+				font-size: 11px
+				border-color: #333333
+				border-style: solid
+				border-width: 0 0.25em 0.25em 0
+				top: 50% 
+				left: 5px
+				transform: rotate(45deg) translate(-50%, -50%)
+				width: 0.7em
+				height: 1.1em
+				opacity: 0
+
+.filter
+	&__range-slider
+		position: relative
+		input
+			display: block
+
+		input[type=range]
+			position: absolute
+			left: 0
+
+		input[type=number]
+			font-size: 16px
+			color: #333333
+			border: none
+			outline: none
+			text-align: center
+			background-color: transparent
+			-moz-appearance: textfield
+
+		input[type=number]::-webkit-outer-spin-button,
+		input[type=number]::-webkit-inner-spin-button 
+			-webkit-appearance: none
+
+		input[type=number]:invalid,
+		input[type=number]:out-of-range
+			border: 2px solid #ff6347
+
+		input[type=range]
+			-webkit-appearance: none
+			width: 100%
+
+
+		input[type=range]::-webkit-slider-runnable-track
+			width: 100%
+			height: 2px
+			cursor: pointer
+			animate: 0.2s
+			background-color: #808080
+			border-radius: 0px
+			box-shadow: none
+			border: 0
+
+		input[type=range]::-moz-range-track
+			width: 100%
+			height: 2px
+			cursor: pointer
+			animate: 0.2s
+			background-color: #808080
+			border-radius: 0px
+			box-shadow: none
+			border: 0
+
+		input[type=range]::-webkit-slider-thumb
+			z-index: 2
+			position: relative
+			height: 18px
+			width: 18px
+			border-radius: 50%
+			background-color: #f7Bc28
+			box-shadow: 0 0 2px rgba(0, 0, 0, 0.2)
+			cursor: pointer
+			-webkit-appearance: none
+			margin-top: -7px
+
+
+		input[type=range]::-moz-range-thumb
+			z-index: 2
+			position: relative
+			height: 18px
+			width: 18px
+			border-radius: 50%
+			background-color: #f7Bc28
+			box-shadow: 0 0 2px rgba(0, 0, 0, 0.2)
+			cursor: pointer
+
+		input[type=range]::-ms-track
+			width: 100%
+			height: 2px
+			cursor: pointer
+			animate: 0.2s
+			background: transparent
+			border-color: transparent
+			color: transparent
+
+		input[type=range]::-ms-fill-lower,
+		input[type=range]::-ms-fill-upper
+			background: #2497e3
+			border-radius: 1px
+			box-shadow: none
+			border: 0
+
+		input[type=range]::-ms-thumb
+			z-index: 2
+			position: relative
+			height: 18px
+			width: 18px
+			border-radius: 50%
+			background-color: #f7Bc28
+			cursor: pointer
+			box-shadow: 0 0 2px rgba(0, 0, 0, 0.2)
+			cursor: pointer
+
+	&__container
+		display: flex
+		max-width: 155px
+		justify-content: center
+		margin: 0 auto
+		margin-bottom: 28px
+
+	&__col
+		display: flex
+		justify-content: space-between
+		margin-bottom: 35px
+
+	&__values
+		margin-bottom: 65px
+
+	&__elem
+		font-size: 14px
+		color: #000000

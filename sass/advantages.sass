@@ -1,0 +1,235 @@
+@import 'responsive'
+
+.advantages
+	background-color: #f7bc28
+	&__block
+		position: relative
+		padding: 24em 0
+		&:after 
+			position: absolute
+			z-index: 0
+			left: -1px
+			right: -1px
+			content: ' '
+			width: -webkit-calc(100% + 2px)
+			width: calc(100% + 2px)
+			height: 350px
+			top: -2px
+			background-image: url(../img/block-top.svg)
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: top
+
+	&__title
+		font-size: 60px
+		color: #333333
+		text-transform: uppercase
+		font-weight: 200
+		padding-bottom: 30px
+		+media(md)
+			font-size: 42px
+		+media(sm)
+			font-size: 29px
+
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+
+	&__box
+		width: calc(100% / 2 - 20px)
+		margin: 0 10px
+		+media(mdx)
+			width: 100%
+			margin: 0px
+
+	&__row
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -20px
+		+media(smx)
+			margin: 0px
+		.advantages__item:nth-child(odd)
+			position: relative
+			&:after
+				position: absolute
+				content: ' '
+				top: 50%
+				transform: translateY(-50%)
+				right: -20px
+				width: 1px
+				height: calc(100% - 30px)
+				background-color: #333333
+				+media(smx)
+					position: static
+		.advantages__item:nth-child(n + 3)
+			border-top: 1px solid #333333
+			+media(smx)
+				border-top: none
+		.advantages__item:not(:last-child)
+			+media(smx)
+				border-bottom: 1px solid #333333
+
+
+	&__item
+		width: calc(100% / 2 - 40px)
+		margin: 0 20px
+		padding: 20px 0
+		+media(smx)
+			width: 100%
+			margin: 0px
+	&__number
+		font-size: 70px
+		line-height: 1
+		color: #333333
+		text-align: center
+		margin-bottom: 18px
+		font-weight: 200
+
+	&__text
+		max-width: 205px
+		margin: 0 auto
+		padding-bottom: 15px
+		p
+			font-size: 18px
+			color: #333333
+			text-align: center
+			text-transform: uppercase
+
+	&__subtitle
+		font-size: 48px
+		color: #333333
+		text-transform: uppercase
+		text-align: right
+		padding-right: 13px
+		padding-bottom: 55px
+		font-weight: normal
+		+media(mdx)
+			font-size: 32px
+			text-align: center
+			margin-top: 35px
+			padding-bottom: 35px
+		+media(sm)
+			font-size: 27px
+
+	&__info
+		font-size: 36px
+		line-height: 1
+		color: #333333
+		text-transform: uppercase
+		text-align: right
+		padding-bottom: 25px
+		font-weight: 900
+		+media(mdx)
+			font-size: 30px
+			text-align: center
+
+	&__desc
+		max-width: 455px
+		margin-left: auto
+		+media(mdx)
+			margin: 0 auto
+			margin-bottom: 25px
+		p
+			font-size: 16px
+			line-height: 1.9
+			color: #333333
+			text-align: right
+			+media(mdx)
+				text-align: center
+
+	&__btn
+		cursor: pointer
+		display: block
+		max-width: 340px
+		width: 100%
+		font: inherit
+		font-size: 18px
+		color: #333333
+		background-color: transparent
+		border: 2px solid #333333
+		border-radius: 15px
+		outline: none
+		text-transform: uppercase
+		padding: 17px 5px
+		margin: 0 auto
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)
+
+	&__inner
+		display: flex
+		justify-content: space-between
+		align-items: center
+		width: 100%
+		max-width: 405px
+		margin-left: auto
+		position: relative
+		height: 80px
+		margin-bottom: 25px
+		+media(mdx)
+			margin-left: 0px
+
+	&__boxes
+		padding-right: 45px
+		+media(mdx)
+			max-width: 500px
+			margin: 0 auto
+			padding: 0 35px 
+
+
+	&__line
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 2px
+		background-color: #333333
+		&:after,
+		&:before
+			content: ""
+			position: absolute
+
+		&:after
+			width: 1px
+			height: 8px
+			background-color: #333333
+			bottom: -7px
+			right: 0
+
+		&:before
+			width: 2px
+			height: 25px
+			background-color: #333333
+			top: 50%
+			transform: translateY(-50%)
+			left: 0%
+
+	&__icon
+		position: absolute
+		z-index: 2
+		width: 30px
+		height: 30px
+		top: -30px
+		right: -28px
+		img
+			display: block
+
+	&__col
+		position: relative
+		font-size: 14px
+		line-height: 1.2
+		color: #333333
+		text-transform: uppercase
+		&-1
+			margin-left: -35px
+		&-4
+			margin-right: -35px
+
+		&-2:before,
+		&-3:before
+			position: absolute
+			content: ""
+			background-color: #252525
+			transform: translateX(-50%)
+			left: 50%
+			width: 1px
+			top: -30px
+			height: 8px

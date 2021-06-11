@@ -1,0 +1,77 @@
+.single {
+	margin-bottom: 20px;
+}
+
+.single__image {
+	margin-top: 42px;
+	margin-bottom: 50px;
+}
+
+.single__image img {
+	display: block;
+	width: 100%;
+}
+
+.single__text p {
+	font-size: 16px;
+	line-height: 1.9;
+	color: #333333;
+	padding-bottom: 2em;
+}
+
+.single__text h1,
+.single__text h2,
+.single__text h3,
+.single__text h4,
+.single__text h5,
+.single__text h6 {
+	line-height: 1.2;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+.single__text h1 {
+	font-size: 34px;
+}
+
+.single__text h2 {
+	font-size: 30px;
+}
+
+.single__text h3 {
+	font-size: 26px;
+}
+
+.single__text h4 {
+	font-size: 22px;
+}
+
+.single__text h5 {
+	font-size: 18px;
+}
+
+.single__text h6 {
+	font-size: 14px;
+}
+
+.single__text ul {
+	margin: 1em 0;
+}
+
+.single__text ul li {
+	list-style-type: disc;
+	list-style-position: inside;
+	line-height: 1.7;
+	margin-bottom: 5px;
+	padding-left: 20px;
+}
+
+.single__text ol {
+	margin: 1em 0;
+	list-style-type: decimal;
+	list-style-position: inside;
+	line-height: 1.7;
+	margin-bottom: 5px;
+	padding-left: 20px;
+}
+

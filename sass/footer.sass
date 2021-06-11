@@ -1,0 +1,148 @@
+@import 'responsive'
+
+.main-footer
+	position: relative
+	background-position: top center
+	background-size: cover
+	padding-top: 135px
+	&:after
+		position: absolute
+		content: ' '
+		top: -2px
+		width: 100%
+		height: 340px
+		background-image: url(../img/contact-black.svg)
+		z-index: 3
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: top
+		pointer-events: none
+
+	&__text
+		font-size: 60px
+		color: #ffffff
+		font-weight: 200
+
+	&__map
+		height: 400px
+		max-height: 80vh
+		iframe
+			display: block
+			width: 100%
+			height: 100%
+			border: none
+
+	&__block
+		max-width: 680px
+
+	&__text
+		padding-bottom: 50px
+		p
+			font-size: 60px
+			line-height: 1.5
+			color: #ffffff
+			+media(md)
+				font-size: 40px
+			+media(sm)
+				font-size: 32px
+
+	&__tel
+		font-size: 90px
+		color: #ffffff
+		margin-bottom: 90px
+		font-weight: 200
+		+media(md)
+			font-size: 50px
+		+media(sm)
+			font-size: 40px
+
+	&__btn
+		cursor: pointer
+		font: inherit
+		display: block
+		max-width: 305px
+		width: 100%
+		font-size: 18px
+		color: #ffffff
+		background-color: transparent
+		border: 2px solid #fff
+		border-radius: 15px
+		padding: 17px 5px
+		outline: none
+		margin-bottom: 140px
+		text-transform: uppercase
+		transition: 0.3s color, 0.3s background-color
+		&:hover
+			background-color: #fff
+			color: #333333
+
+	&__holder
+		position: relative
+		z-index: 1
+		padding-top: 55px
+		&:after
+			position: absolute
+			z-index: -1
+			content: ' '
+			top: 0px
+			left: 0px
+			width: 100%
+			height: 100%
+			background-color: rgba(0, 0, 0, 0.7)
+
+	&__row
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -40px
+		align-items: center
+		justify-content: center
+		+media(md)
+			margin: 0px
+			padding-bottom: 15px
+
+	&__col
+		width: calc(100% / 3 - 80px)
+		margin: 0 40px
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-bottom: 58px
+		+media(md)
+			width: 100%
+			margin: 0px
+			margin-bottom: 30px
+
+	&__icon
+		margin-right: 32px
+		svg
+			width: 20px
+			height: 20px
+			fill: #ffffff
+
+	&__data
+		font-size: 24px
+		color: #ffffff
+		font-weight: 200
+		&--tel
+			font-size: 30px
+
+.msg-modal
+	position: fixed
+	top: 30%
+	left: calc(50% - 150px)
+	width: 300px
+	padding: 20px 30px
+	border-radius: 15px
+	text-align: center
+	background-color: #75af26
+	color: #fff
+	opacity: 0
+	visibility: hidden
+	font-size: 18px
+	line-height: 1.5
+	border-radius: 5px
+	z-index: 20
+	transition: 0.3s visibility, 0.3s opacity
+	&-active
+		opacity: 1
+		visibility: visible

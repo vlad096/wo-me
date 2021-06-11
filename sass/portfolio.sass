@@ -1,0 +1,138 @@
+@import 'responsive'
+
+.portfolio
+	margin-bottom: 50px
+	&__title
+		font-size: 72px
+		line-height: 1
+		color: #333333
+		text-transform: uppercase
+		text-align: center
+		padding-bottom: 65px
+		font-weight: 200
+		+media(md)
+			font-size: 50px
+		+media(sm)
+			font-size: 32px
+
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+
+	&__item
+		position: relative
+		width: 25%
+		+media(lgsm)
+			width: calc(100% / 3)
+		+media(md)
+			width: 50%
+		+media(sm)
+			width: 100%
+
+		&:hover 
+			.portfolio__image:after,
+			.portfolio__block
+				opacity: 1
+				visibility: visible
+
+	&__image
+		position: relative
+		padding-top: 56.5%
+		min-height: 270px
+		&:after
+			opacity: 0
+			visibility: hidden
+			position: absolute
+			content: ' '
+			top: 0px
+			left: 0px
+			width: 100%
+			height: 100%
+			background-color: rgba(0, 0, 0, 0.9)
+			transition: 0.3s opacity, 0.3s visibility
+			
+		img
+			position: absolute
+			top: 0
+			left: 0
+			display: block
+			width: 100%
+			height: 100%
+			object-fit: cover
+			object-position: center
+
+	&__block
+		opacity: 0
+		visibility: hidden
+		position: absolute
+		top: 0px
+		left: 0px
+		width: 100%
+		padding: 0 30px
+		padding-bottom: 10px
+		transition: 0.3s opacity, 0.3s visibility
+
+	&__subtitle
+		font-size: 30px
+		line-height: 1
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		padding-top: 70px 
+		padding-bottom: 32px
+		font-weight: 400
+		+media(mdx)
+			font-size: 26px
+
+	&__btn
+		cursor: pointer
+		display: block
+		font: inherit
+		font-size: 18px
+		background-color: transparent
+		color: #ffffff
+		border: none
+		outline: none
+		text-align: center
+		text-transform: uppercase
+		margin: 0 auto
+		margin-bottom: 32px
+		font-weight: 900
+
+	&__data
+		font-size: 18px
+		line-height: 1.2
+		color: #ffffff
+		text-transform: uppercase
+		text-align: center
+		font-weight: 400
+
+	&__load
+		cursor: pointer
+		background-image: url(../img/icons/load.png)
+		background-size: 30px 25px
+		background-position: left center
+		background-repeat: no-repeat
+		display: block
+		font: inherit
+		font-size: 18px
+		color: #333333
+		border: none
+		outline: none
+		padding: 0px
+		padding-left: 46px
+		margin: 40px auto
+		background-color: #fff
+		span
+			display: inline-block
+			font-size: 30px
+			font-weight: 200
+
+	&__text
+		padding-top: 68px
+		border-top: 1px solid #d2d2d2
+		p
+			font-size: 16px
+			line-height: 1.9
+			color: #333333
+			padding-bottom: 2em

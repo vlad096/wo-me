@@ -1,0 +1,146 @@
+@import 'responsive'
+
+.blog
+	margin-top: -250px
+	padding-bottom: 25px	
+	position: relative
+	background-color: #252628
+	&+.main-footer
+		&:after
+			background-image: url(../img/contact-light.svg)
+
+	&__block
+		position: relative
+		padding-top: 24em
+		&:after 
+			position: absolute
+			z-index: 0
+			left: -1px
+			right: -1px
+			content: ' '
+			width: -webkit-calc(100% + 2px)
+			width: calc(100% + 2px)
+			height: 350px
+			top: -2px
+			background-image: url(../img/block-top.svg)
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: top
+
+	&__title
+		font-size: 60px
+		color: #ffff
+		text-transform: uppercase
+		padding-bottom: 22px
+		font-weight: 200
+		+media(md)
+			font-size: 42px
+		+media(sm)
+			font-size: 29px
+
+	&__link
+		display: inline-block
+		font-size: 24px
+		color: #ffff
+		text-transform: uppercase
+		margin-bottom: 70px
+		transition: 0.3s color
+		&:hover
+			color: rgba(255, 255, 255, 0.5)
+
+	&__wrap
+		.blog__elem:nth-child(even)
+			.blog__item--content
+				order: -1
+				+media(md)
+					order: 0
+
+	&__elem
+		display: flex
+		margin-bottom: 40px	
+		+media(md)
+			flex-direction: column
+			max-width: 550px
+			margin: 0 auto
+			margin-bottom: 40px	
+
+	&__item
+		&--image
+			position: relative
+			z-index: 1
+			display: flex
+			justify-content: center
+			align-items: center
+			width: calc(100% - 400px)
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: top center
+			padding: 40px
+			min-height: 400px
+			+media(md)
+				width: 100%
+				padding: 40px 20px
+			&:after
+				position: absolute
+				z-index: -1
+				content: ' '
+				top: 0px
+				left: 0px
+				width: 100%
+				height: 100%
+				background-color: rgba(0, 0, 0, 0.7)
+		&--content
+			width: 400px
+			background-color: #fff
+			padding: 40px
+			padding-top: 80px
+			padding-bottom: 39px
+			+media(md)
+				width: 100%
+				padding: 40px 20px
+
+	&__text
+		padding-bottom: 35px
+		p
+			font-size: 16px
+			line-height: 1.9
+			color: #252628
+
+	&__subtitle
+		font-size: 36px
+		color: #ffffff
+		text-transform: uppercase
+		font-variant: small-caps
+		font-weight: 400
+		+media(md)
+			font-size: 29px
+		+media(sm)
+			font-size: 25px
+
+	&__inner
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+
+	&__btn
+		font: inherit
+		cursor: pointer
+		font-size: 16px
+		color: #f7bc28
+		border: none
+		outline: none
+		background-color: #fff
+		text-transform: uppercase
+		margin-right: 20px
+		margin-bottom: 15px
+		font-weight: 700
+		transition: 0.3s color
+		&:hover
+			color: #bd901e
+
+	&__data
+		font-size: 16px
+		color: #808080
+		text-transform: uppercase
+		margin-bottom: 15px

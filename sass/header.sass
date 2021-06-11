@@ -1,0 +1,217 @@
+@import 'responsive'
+
+.main-header
+	background-color: #010101
+	padding: 25px 0
+	+media(lb)
+		padding-bottom: 20px
+	+media(sm)
+		padding-bottom: 0px
+	&__holder
+		display: flex
+		justify-content: space-between
+		align-items: center
+		+media(lb)
+			flex-wrap: wrap
+			justify-content: center
+		+media(xxs)
+			flex-direction: column
+
+	&__logo
+		display: inline-flex
+		align-items: center
+		margin-right: 20px
+		+media(lb)
+			margin-bottom: 20px
+		+media(xxs)
+			margin-right: 0px
+		
+	&__image
+		max-width: 70px
+		margin-right: 12px
+		img
+			display: block
+			width: 100%
+
+	&__title
+		font-size: 36px
+		line-height: 1
+		color: #f7bc28
+		text-transform: uppercase
+		span
+			color: #ffffff
+
+	&__wrap
+		position: relative
+		display: flex
+		align-items: center
+		+media(lb)
+			flex-basis: 100%
+			order: 2
+			justify-content: center
+		+media(sm)
+			width: 100%
+
+	&__description
+		font-size: 16px
+		line-height: 1.2
+		color: #ffffff
+		padding-right: 20px	
+		text-transform: uppercase
+		font-weight: 500
+	
+	&__list
+		display: flex
+		position: relative
+		margin-right: 40px	
+		+media(lb)
+			margin-right: 0px
+		+media(sm)
+			display: none
+			width: 100%
+			top: 100%
+			left: 0
+			z-index: 8
+			position: absolute
+			padding-bottom: 15px
+			background-color: #010101
+			max-height: calc(100vh - 70px)
+			overflow-y: auto
+			overflow-x: hidden
+		li:not(:last-child) .main-header__link
+			margin-right: 30px
+
+	&__link
+		font-size: 18px
+		line-height: 1.2	
+		display: block
+		color: #ffffff
+		padding: 5px 0
+		text-transform: uppercase
+		transition: 0.3s color
+		+media(sm)
+			padding: 5px 20px
+		&:hover
+			color: #f7bc28
+		&--active
+			color: #f7bc28
+
+	&__btn
+		cursor: pointer
+		display: block
+		max-width: 195px
+		width: 100%
+		font-size: 16px
+		line-height: 1.2
+		color: #333333
+		box-shadow: 0 0 22px rgba(0, 0, 0, 0.2)
+		color: #333333
+		background-color: #f7bc28 
+		border: none
+		border-radius: 5px
+		outline: none
+		text-transform: uppercase
+		padding: 11px 5px
+		margin-right: 38px
+		transition: 0.3s background-color
+		+media(lb)
+			margin-bottom: 20px
+		+media(xxs)
+			margin-right: 0px
+		&:hover
+			background-color: #bd901e
+
+	&__tel
+		font-size: 18px
+		color: #ffffff
+		margin-right: 40px
+		+media(lb)
+			margin-bottom: 20px
+		+media(xxs)
+			margin-right: 0px	
+		
+.mobile-wrap
+	display: none
+	align-items: center
+	justify-content: space-between
+	cursor: pointer
+	+media(sm)
+		display: flex
+		width: 100%
+		padding: 15px 20px
+		padding-top: 0px
+
+.line-burger
+	display: block
+	position: absolute
+	top: 50%
+	left: 0
+	width: 25px
+	height: 3px
+	background-color: #ffffff
+	transition: 0.5s width
+	&:after,
+	&:before
+		content: ''
+		position: absolute
+		width: 25px
+		height: 3px
+		background-color: #ffffff
+		left: 0
+		transition: 0.5s
+	&:after
+		top: calc(100% + 5px)
+	&:before
+		bottom: calc(100% + 5px)
+
+.line-active
+	width: 0
+	&:after
+		top: 9px
+		transform: rotate(-45deg)
+		transform-origin: 0 0
+	&:before
+		bottom: 9px
+		transform: rotate(45deg)
+		transform-origin: 0 100%
+
+.main-nav__toggle
+	position: relative
+	cursor: pointer
+	display: none
+	width: 25px
+	height: 25px
+	margin-top: -5px
+	+media(sm)
+		display: block
+
+.language-chooser
+	display: flex
+	+media(lb)
+		margin-bottom: 20px
+	li
+		font-size: 18px
+		line-height: 1.2
+		padding: 0px 10px
+		text-transform: uppercase
+		font-family: Montserrat-Regular, sans-serif
+		&:last-child
+			padding-right: 0px
+		&:not(:last-child)
+			position: relative
+			&:after
+				position: absolute
+				content: '|'
+				color: #ffffff
+				top: 0px
+				right: 0px
+		a
+			color: #ffffff
+			transition: 0.3 color
+			&:hover
+				color: #f7bc28
+				
+		&.active a
+			font-weight: 700
+			&:hover
+				color: #fff

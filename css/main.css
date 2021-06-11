@@ -1,0 +1,74 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 100vh;
+	overflow-x: hidden;
+	color: #333333;
+	background-color: #fff;
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: normal;
+	font-style: normal;
+	font-family: "Montserrat";
+}
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	max-width: 1185px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 5px;
+}
+
+.container--header {
+	max-width: 1610px;
+	padding: 0 5px;
+}
+
+.container--inner {
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0px;
+}
+
+.container--block {
+	max-width: 1130px;
+}
+
+.container--services {
+	max-width: 1225px;
+}
+
+.container--catalog {
+	max-width: 1210px;
+}
+
+@media screen and (max-width: 1050px) {
+
+.container--header {
+	padding: 0px;
+}
+
+}
+
+@media screen and (max-width: 560px) {
+
+.container--header {
+	padding: 0px;
+}
+
+.container--inner {
+	padding: 0px;
+}
+
+}
+

@@ -1,0 +1,93 @@
+@import 'responsive'
+
+.about
+	+media(md)
+		margin-bottom: 50px
+
+	.container
+		position: relative
+		z-index: 2
+		top: -200px
+
+	&__block
+		position: relative
+		&:after
+			position: absolute
+			z-index: 0
+			left: -1px
+			right: -1px
+			content: ' '
+			width: calc(100% + 2px)
+			bottom: calc(100% - 1px)
+			height: 350px
+			background-image: url(../img/block-bottom.svg)
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: bottom
+
+	&__title
+		font-size: 60px
+		color: #333333
+		text-transform: uppercase
+		text-align: center
+		padding-bottom: 60px
+		font-weight: 200
+		+media(md)
+			font-size: 42px
+		+media(sm)
+			font-size: 29px
+
+	&__item
+		&--image
+			width: 410px
+			margin-right: 40px
+			float: left
+			position: relative
+			padding-bottom: 40px
+			+media(md)
+				float: none
+				max-width: 410px
+				width: initial
+				margin: 0 auto
+				margin-bottom: 40px
+
+		&--content
+			p
+				font-size: 18px
+				line-height: 2
+				color: #333333
+				padding-bottom: 39px
+				font-weight: 400
+
+	&__desc
+		p:nth-child(1)
+			font-size: 24px
+			line-height: 1.5
+	&__box
+		max-width: calc(100% - 33px)
+		position: relative
+		z-index: 2
+		&--double
+			position: absolute
+			z-index: 1
+			opacity: 0.5
+			top: 33px
+			left: 39px
+
+	&__inner
+		display: flex
+		+media(md)
+			display: block
+		p
+			width: calc(100% - 370px)
+			font-size: 18px
+			line-height: 2
+			padding-right: 60px
+			+media(md)
+				width: 100%
+				padding-right: 0px
+
+	&__logo
+		width: 370px
+		+media(md)
+			width: initial

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Wo-me</title>
+
+		<link rel="stylesheet" href="fonts/fonts.css">
+	    <link rel="stylesheet" href="css/slick.css">
+	    <link rel="stylesheet" href="css/jquery.formstyler.css">
+	    <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+<svg style="display: none;">
+	 <g id="icon-phone">
+        <path d="M0 7.2C.01 4.33 1.47 1.61 3.93.1c3.18-.16 4.66 3.43 6.94 5.15 2.3 2.14-.76 4.43-2.3 5.84 2.2 4.52 5.94 8.17 10.41 10.46 1.5-1.3 2.67-3.71 5.04-3.05 2 2.11 4.65 3.86 5.98 6.47v1.35c-1.25 1.27-2.37 3.12-4.39 3.15.04.13.11.4.14.53h-.37c.03-.12.11-.36.15-.48-5.69 1.44-11.13-2.19-15.37-5.63C5.61 19.67.75 14.77 0 8.31V7.2z"/>
+    </g>
+
+    <g id="icon-map">
+    	<path d="M.52 12.99C-1.07 6.64 4.45-.2 10.99.05c6.56-.28 11.92 6.51 10.59 12.84C20.11 19.6 14.32 24.05 11.29 30h-.54C7.8 24.05 2.24 19.55.52 12.99m7.99-7.28c-3.63 1.68-4.19 7.19-.89 9.5 3.05 2.61 8.26.62 8.93-3.3 1.17-4.38-4.08-8.4-8.04-6.2z"/>
+    </g>
+
+    <g id="icon-email">
+		<path opacity=".16" d="M0 0h1.95C1.81 1.28 1.16 1.85 0 1.72V0zM27.62 0H30v1.6c-1.12.05-1.92-.49-2.38-1.6zM0 3.92c2.96 4.68 8.37 6.89 12.6 10.22 2.91 2.46 5.87-.84 8.27-2.35C24.03 9.2 28.55 7.65 30 3.5v4.64c-2.81 2.19-5.85 4.06-8.71 6.18-1.94 1.31-3.86 2.96-6.28 3.2-2.43-.27-4.35-1.92-6.29-3.24C5.85 12.16 2.81 10.29 0 8.09V3.92zM0 22.11c1.3.1 1.88.73 1.75 1.89H0v-1.89zM28.03 24c.15-1.16.81-1.76 1.97-1.8V24h-1.97z"/>
+		<path d="M1.95 0h25.67c.46 1.11 1.26 1.65 2.38 1.6v1.9c-1.45 4.15-5.97 5.7-9.13 8.29-2.4 1.51-5.36 4.81-8.27 2.35C8.37 10.81 2.96 8.6 0 3.92v-2.2c1.16.13 1.81-.44 1.95-1.72z"/>
+		<path d="M0 8.09c2.81 2.2 5.85 4.07 8.72 6.19 1.94 1.32 3.86 2.97 6.29 3.24 2.42-.24 4.34-1.89 6.28-3.2 2.86-2.12 5.9-3.99 8.71-6.18V22.2c-1.16.04-1.82.64-1.97 1.8H1.75c.13-1.16-.45-1.79-1.75-1.89V8.09z"/>
+	</g>
+	<g id="icon-search">
+        <path d="M495,466.2L377.2,348.4c29.2-35.6,46.8-81.2,46.8-130.9C424,103.5,331.5,11,217.5,11C103.4,11,11,103.5,11,217.5   S103.4,424,217.5,424c49.7,0,95.2-17.5,130.8-46.7L466.1,495c8,8,20.9,8,28.9,0C503,487.1,503,474.1,495,466.2z M217.5,382.9   C126.2,382.9,52,308.7,52,217.5S126.2,52,217.5,52C308.7,52,383,126.3,383,217.5S308.7,382.9,217.5,382.9z"/>
+    </g>
+</svg>
+
+<div class="container container--inner">
+
+	<header class="main-header">
+		<div class="container container--header">
+			<div class="main-header__holder">
+				<a href="" class="main-header__logo">
+					<div class="main-header__image">
+						<img src="img/icons/logo.png" alt="">
+					</div>
+					<p class="main-header__title">Wo-<span>me</span> </p>
+				</a>
+				<div class="main-header__wrap">
+					<div class="mobile-wrap">
+					    <h3 class="main-header__description">Меню</h3>
+					    <div class="main-nav__toggle">
+					    	 <span class="line-burger"></span>
+						</div>
+					</div>
+					<ul class="main-header__list">
+					    <li>
+					        <a class="main-header__link" href="">Главная</a>
+					    </li>
+					    <li>
+					       <a class="main-header__link" href="">Металл</a>
+					    </li>
+					    <li>
+					       <a class="main-header__link" href="">Дерево</a>
+					    </li>
+					    <li>
+					       <a class="main-header__link main-header__link--active" href="">Магазин</a>
+					    </li>
+					    <li>
+					       <a class="main-header__link" href="">Публикации</a>
+					    </li>
+					    <li>
+					        <a class="main-header__link" href="">Контакты</a>
+					    </li>
+					</ul>
+				</div><!--end main-header__wrap-->
+				<button class="main-header__btn btn">Заказать звонок</button>
+				<p class="main-header__tel">063 455 45 45</p>
+				 <ul>
+			        <li id="qtranslate-3" class="widget qtranxs_widget">
+			             <ul class="language-chooser language-chooser-text qtranxs_language_chooser" id="qtranslate-3-chooser">
+			                <li class="lang-ru active">
+			                    <a href="" lang="ru" title="Рус (ru)" class="qtranxs_text qtranxs_text_ru"><span>Рус</span></a>
+			                 </li>
+			                 <li class="lang-ua">
+			                     <a href="" lang="ua" title="Рус (ua)" class="qtranxs_text qtranxs_text_ua"><span>Укр</span></a>
+			                 </li>
+			             </ul>
+			              <div class="qtranxs_widget_end"></div>
+			         </li>
+			    </ul>
+			</div><!--end main-header__holder-->
+		</div>
+	</header>
+
+	<section class="catalog">
+		<div class="container container--catalog">
+			<ul class="contacts__list"> 
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Магазин</a></li>
+				<li>Круглые трубы</li>
+			</ul>
+			<h3 class="contacts__title">Круглые трубы</h3>
+			<div class="product__wrap">
+				<div class="product__item product__item--data">
+					<div class="product__single">
+						<img src="img/single-product.png" alt="">
+	                </div>
+	                <div class="product__gallery">
+						<div class="product__col product__col--active">
+							<img src="img/single-product.png" alt="">
+						</div>
+						<div class="product__col">
+							<img src="https://bipbap.ru/wp-content/uploads/2017/04/priroda_kartinki_foto_03.jpg" alt="">
+						</div>
+						<div class="product__col">
+							<img src="img/single-product.png" alt="">
+						</div>
+						<div class="product__col">
+							<img src="img/single-product.png" alt="">
+						</div>
+						<div class="product__col">
+							<img src="img/single-product.png" alt="">
+						</div>
+		            </div><!--end product__gallery-->
+				</div>
+				<div class="product__item">
+					<div class="product__container">
+						<p class="product__count"><b>120</b>₴ <span>/ м</span></p>
+						<div class="product__box">
+		                    <input type="text" value="1" data-price="120">
+		                    <div class="product__holder">
+		                      <button class="product__btn product__btn--increment"></button>
+		                      <button class="product__btn product__btn--decrement"></button>
+		                    </div>
+		                 </div>
+		                 <button class="product__add">Добавить в корзину</button>
+					</div><!--end product__container-->
+					<div class="product__desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+					<h4 class="product__head">Характеристики</h4>
+					<div class="product__row">
+						<p class="product__content">Диаметр</p>
+						<p class="product__content">20 мм</p>
+					</div>
+					<div class="product__row">
+						<p class="product__content">Диаметр</p>
+						<p class="product__content">20 мм</p>
+					</div>
+					<div class="product__row">
+						<p class="product__content">Диаметр</p>
+						<p class="product__content">20 мм</p>
+					</div>
+					<div class="product__row">
+						<p class="product__content">Диаметр</p>
+						<p class="product__content">20 мм</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="product page-product">
+		<div class="container container--catalog">
+			<h3 class="product__subtitle">Товары из категории</h3>
+			<div class="product__inner">
+				<a href="" class="product__elem">
+					<div class="product__image" style="background-image: url(img/product.jpg"></div>
+					<h3 class="product__title">Металлические трубы</h3>
+					<div class="product__text">
+						<p>Материал: Силумин
+								Диаметр: 120 мм</p>
+					</div>
+					<p class="product__price"><span>120.00</span>₴ / м </p>
+				</a>
+				<a href="" class="product__elem">
+					<div class="product__image" style="background-image: url(img/product.jpg"></div>
+					<h3 class="product__title">Металлические трубы</h3>
+					<div class="product__text">
+						<p>Материал: Силумин
+								Диаметр: 120 мм</p>
+					</div>
+					<p class="product__price"><span>120.00</span>₴ / м </p>
+				</a>
+				<a href="" class="product__elem">
+					<div class="product__image" style="background-image: url(img/product.jpg"></div>
+					<h3 class="product__title">Металлические трубы</h3>
+					<div class="product__text">
+						<p>Материал: Силумин
+								Диаметр: 120 мм</p>
+					</div>
+					<p class="product__price"><span>120.00</span>₴ / м </p>
+				</a>
+				<a href="" class="product__elem">
+					<div class="product__image" style="background-image: url(img/product.jpg"></div>
+					<h3 class="product__title">Металлические трубы</h3>
+					<div class="product__text">
+						<p>Материал: Силумин
+								Диаметр: 120 мм</p>
+					</div>
+					<p class="product__price"><span>120.00</span>₴ / м </p>
+				</a>
+			</div><!--end product__inner-->
+		</div>
+	</section>
+
+	<footer class="main-footer" style="background-image: url(img/footer-bg.jpg)">
+		<div class="container">
+			<div class="main-footer__block">
+				<div class="main-footer__text">
+					<p>Давайте сделаем Ваш объект вместе!</p>
+				</div>
+				<p class="main-footer__tel">063 455 45 45</p>
+				<button class="main-footer__btn btn">Заказать звонок</button>
+			</div><!--end main-footer__block-->
+			
+		</div>
+		<div class="main-footer__holder">
+			<div class="container">
+				<div class="main-footer__row">
+					<div class="main-footer__col">
+						<div class="main-footer__icon">
+							<svg viewBox="0 0 30 30">
+						      <use xlink:href="#icon-phone" />
+						    </svg>
+						</div>
+						<p class="main-footer__data main-footer__data--tel">063 455 45 45</p>
+					</div>
+					<div class="main-footer__col">
+						<div class="main-footer__icon">
+							<svg viewBox="0 0 30 24">
+						      <use xlink:href="#icon-email" />
+						    </svg>
+						</div>
+						<p class="main-footer__data">info@site.com</p>
+					</div>
+					<div class="main-footer__col">
+						<div class="main-footer__icon">
+							<svg viewBox="0 0 22 30">
+						      <use xlink:href="#icon-map" />
+						    </svg>
+						</div>
+						<p class="main-footer__data">г. Киев и область</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-footer__map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81443.36761832348!2d30.363405206571368!3d50.364592116914636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1597148503490!5m2!1sru!2sua" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</div>
+	</footer>
+	
+<div class="popup popup__reqcall">
+    <div class="reqcall__wrap">
+        <div class="popup__close"></div>
+        <div class="reqcall__container">
+            <div class="reqcall__inner">
+                <h3 class="reqcall__title">Заказать звонок</h3>
+                <form class="reqcall__form">
+                    <div class="reqcall__row">
+                        <div class="select__wrap select__hour" id="select__hour">
+                            <div class="select__placeholder"></div>
+                            <ul class="select__list">
+                                <li class="select__item" data-value="00">00</li>
+                                <li class="select__item" data-value="01">01</li>
+                                <li class="select__item" data-value="02">02</li>
+                                <li class="select__item" data-value="03">03</li>
+                                <li class="select__item" data-value="04">04</li>
+                                <li class="select__item" data-value="05">05</li>
+                                <li class="select__item" data-value="06">06</li>
+                                <li class="select__item" data-value="07">07</li>
+                                <li class="select__item" data-value="08">08</li>
+                                <li class="select__item" data-value="09">09</li>
+                                <li class="select__item" data-value="10">10</li>
+                                <li class="select__item" data-value="11">11</li>
+                                <li class="select__item" data-value="12">12</li>
+                                <li class="select__item" data-value="13">13</li>
+                                <li class="select__item" data-value="14">14</li>
+                                <li class="select__item" data-value="15">15</li>
+                                <li class="select__item" data-value="16">16</li>
+                                <li class="select__item" data-value="17">17</li>
+                                <li class="select__item" data-value="18">18</li>
+                                <li class="select__item" data-value="19">19</li>
+                                <li class="select__item" data-value="20">20</li>
+                                <li class="select__item" data-value="21">21</li>
+                                <li class="select__item" data-value="22">22</li>
+                                <li class="select__item" data-value="23">23</li>
+                            </ul>
+                        </div>
+                        <div class="select__wrap select__minute" id="select__minute">
+                            <div class="select__placeholder"></div>
+                            <ul class="select__list">
+                                <li class="select__item" data-value="00">00</li>
+                                <li class="select__item" data-value="05">05</li>
+                                <li class="select__item" data-value="10">10</li>
+                                <li class="select__item" data-value="15">15</li>
+                                <li class="select__item" data-value="20">20</li>
+                                <li class="select__item" data-value="25">25</li>
+                                <li class="select__item" data-value="30">30</li>
+                                <li class="select__item" data-value="35">35</li>
+                                <li class="select__item" data-value="40">40</li>
+                                <li class="select__item" data-value="45">45</li>
+                                <li class="select__item" data-value="50">50</li>
+                                <li class="select__item" data-value="55">55</li>
+                            </ul>
+                        </div>
+                        <div class="select__wrap select__day" id="select__day">
+                            <div class="select__placeholder"></div>
+                            <ul class="select__list">
+                                <li class="select__item" data-value="Сегодня">Сегодня</li>
+                                <li class="select__item" data-value="Завтра">Завтра</li>
+                                <li class="select__item" data-value="Послезавтра">Послезавтра</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="reqcall__error">Неверный номер телефона</div>
+                    <div class="reqcall__row">
+                        <input type="tel" class="reqcall__input" placeholder="Номер телефона">
+                        <button class="reqcall__btn">Отправить</button>
+                    </div>
+                </form>
+                <p class="reqcall__example">Например: 093 000 00 00</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-gallery">
+  <div class="inner-overlay inner-img">
+    <div class="overlay-close"></div>
+      <div class="overlay-slider inner__data">
+        <div class="product__col">
+         <img src="img/single-product.png" alt="">
+        </div>
+        <div class="product__col">
+         <img src="https://bipbap.ru/wp-content/uploads/2017/04/priroda_kartinki_foto_03.jpg" alt="">
+        </div>
+        <div class="product__col">
+          <img src="img/single-product.png" alt="">
+         </div>
+         <div class="product__col">
+          <img src="img/single-product.png" alt="">
+         </div>
+         <div class="product__col">
+          <img src="img/single-product.png" alt="">
+         </div>
+      </div><!--end overlay-slider-->
+  </div>
+</div>
+
+</div>
+
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
+	</body>
+</html>

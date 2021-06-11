@@ -1,0 +1,84 @@
+@import 'responsive'
+
+.cost
+	padding-top: 3em
+	padding-bottom: 1.5em
+	&__title
+		font-size: 72px
+		line-height: 1	
+		color: #333333
+		text-align: center
+		text-transform: uppercase
+		padding-bottom: 90px
+		font-weight: 200
+		+media(md)
+			font-size: 45px	
+			padding-bottom: 65px	
+		+media(sm)
+			font-size: 30px	
+			padding-bottom: 40px	
+
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -20px
+		+media(sm)
+			margin: 0px	
+
+	&__item
+		width: calc(100% / 3 - 40px)
+		margin: 0 20px
+		margin-bottom: 42px
+		box-shadow: 0 0 30px rgba(0, 0, 0, 0.2)
+		padding: 40px 38px
+		padding-bottom: 33px
+		border: 2px solid #f7bc28
+		+media(mdx)
+			width: calc(100% / 2 - 40px)
+			padding: 40px 20px
+			padding-bottom: 30px
+		+media(sm)
+			width: 100%	
+			max-width: 500px
+			margin: 0 auto
+			margin-bottom: 40px	
+
+	&__subtitle
+		font-size: 36px
+		line-height: 1
+		color: #000000
+		text-transform: uppercase
+		text-align: center
+		padding-bottom: 26px
+		font-weight: 200
+		+media(md)
+			font-size: 30px
+
+	&__info
+		font-size: 24px
+		line-height: 1.25
+		color: #000000
+		text-transform: uppercase
+		text-align: center
+		padding-bottom: 36px
+		font-weight: 200
+		+media(md)
+			font-size: 22px
+
+	&__text
+		padding-bottom: 40px
+		p
+			font-size: 16px
+			line-height: 1.9
+			color: #333333
+			text-align: center
+
+	&__price
+		font-size: 24px
+		text-align: center
+		line-height: 1.25
+		color: #000000
+		font-weight: normal
+		span
+			font-size: 48px
+			font-weight: 200
